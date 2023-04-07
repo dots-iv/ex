@@ -1,0 +1,464 @@
+* {
+  font-family: "Montserrat", sans-serif;
+  text-decoration: none;
+}
+h1 {
+  margin: 0;
+  font-size: 3.5rem;
+  line-height: 4rem;
+}
+a {
+  text-decoration: none;
+  color: #f73;
+}
+.body {
+  font: 0.9375rem / normal Montserrat, sans-serif;
+  background: white;
+  margin: 0;
+  padding: 0;
+  min-width: 320px;
+  overflow-x: hidden;
+  position: relative;
+  color: var(--text);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  color: #2e4057;
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+@media only screen and (max-width: 767px) {
+  .container {
+    padding: 0 20px;
+  }
+}
+@media only screen and (max-width: 1240px) {
+  .container {
+    padding: 0 40px;
+  }
+}
+.header {
+  background: #fff;
+  padding: 27px 0;
+  box-sizing: border-box;
+  height: 90px;
+  z-index: 2;
+  position: relative;
+}
+@media only screen and (max-width: 767px) {
+  .header {
+    padding-top: 0;
+    padding-bottom: 6px;
+    height: 82px;
+  }
+}
+@media only screen and (max-width: 1240px) {
+  .header {
+    padding: 17px 0;
+    height: 70px;
+  }
+}
+.header_box {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+@media only screen and (max-width: 767px) {
+  .header_box {
+    justify-content: space-between;
+    padding-top: 16px;
+  }
+}
+.header_logo {
+  margin-right: 24px;
+}
+@media only screen and (max-width: 767px) {
+  .header_logo {
+    margin: 0;
+  }
+}
+.logo_img {
+  max-height: 34px;
+  max-width: 152px;
+  height: 100%;
+  width: 100%;
+}
+@media only screen and (max-width: 767px) {
+  .logo_img {
+    width: 98px;
+    height: 22px;
+  }
+}
+.header_info {
+  font-size: 0.8125rem;
+  line-height: 1rem;
+}
+@media only screen and (max-width: 767px) {
+  .header_info {
+    display: none;
+  }
+}
+.header_nav_menu {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+.header_nav-link {
+  color: var(--text);
+  font-weight: 600;
+  font-size: 0.9375rem;
+  display: flex;
+  align-items: center;
+  line-height: 1.5rem;
+  margin-right: 36px;
+  position: relative;
+}
+.messeage_image {
+  max-width: 18px;
+  max-height: 18px;
+  width: 100%;
+  height: 100%;
+  margin-right: 12px;
+}
+.prize_info {
+  background: #2aa2d5;
+  min-height: 56px;
+  box-sizing: border-box;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.prize_box {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 0;
+}
+.prize_tittle {
+  font-weight: 700;
+  font-size: 1.375rem;
+  line-height: 1.625rem;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 108px;
+  position: relative;
+}
+.prize_link {
+  background: #55b5dd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 66px;
+  box-sizing: border-box;
+  border-radius: 30px;
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 1.25rem;
+  color: white;
+  margin-right: 100px;
+}
+.prize_tittle::before {
+  background: url(/img/moneybag_diner_13355.png) no-repeat;
+  content: "";
+  width: 52px;
+  height: 57px;
+  position: absolute;
+  left: 0;
+  top: -4px;
+}
+.main {
+}
+.main_hero {
+  padding-top: 60px;
+  position: relative;
+  background: linear-gradient(180deg, #ebebeb 0, #fff 51.85%);
+}
+.exchange_block {
+  margin-bottom: 100px;
+}
+
+.trade_box {
+  display: grid;
+  grid-template-columns: 1fr 588px;
+  grid-column-gap: 24px;
+}
+.trade_tittle {
+  margin-bottom: 30px;
+  font-size: 3.5rem;
+  line-height: 4rem;
+}
+.trade_text {
+  font-size: 0.9375rem;
+  line-height: 1.5rem;
+}
+.trade_text a {
+  font-weight: 600;
+  border-bottom: 1px solid #f73;
+}
+.trade_rules {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin-top: 50px;
+}
+.trade_item {
+  display: flex;
+}
+.trade_icon {
+  max-width: 54px;
+  max-height: 54px;
+  width: 100%;
+  height: 100%;
+  margin-right: 20px;
+}
+
+.trade_item-tittle {
+  font-size: 1.125rem;
+  line-height: 1.375rem;
+  font-weight: 700;
+  margin-bottom: 6px;
+}
+.trade_item-text {
+  font-size: 0.8125rem;
+  line-height: 1.375rem;
+  color: #9f9f9f;
+}
+.exchange_main {
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 0 0 14px rgba(39, 39, 39, 0.2);
+  position: relative;
+}
+.exchange_header {
+  padding: 40px 40px 15px 40px;
+}
+.exchange_tittle {
+  font-size: 1.125rem;
+  line-height: 1.625rem;
+  font-weight: 700;
+}
+.exchange_header-info {
+  font-size: 0.8125rem;
+}
+.exchange_info {
+  padding: 15px 40px;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+  background: #fff8f5;
+  display: flex;
+  flex-direction: column;
+}
+.exchange_info_container {
+  align-items: center;
+  margin-bottom: 4px;
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+.exchange_info_value {
+  color: #f73;
+  font-weight: 600;
+  font-size: 0.9375rem;
+  line-height: 1.125rem;
+}
+.exchange__info_container:last-child {
+  margin-bottom: 0;
+}
+.exchange_info_text {
+  color: var(--ltext);
+  font-size: 0.8125rem;
+  line-height: 1.125rem;
+  align-self: flex-start;
+  position: relative;
+}
+.exchange_fields {
+  display: flex;
+  gap: 20px;
+  position: relative;
+  flex-direction: column;
+}
+.exchange_field-item {
+  padding: 0 40px;
+}
+.exchange_field-header {
+  margin-bottom: 10px;
+  font-weight: 600;
+  font-size: 0.9375rem;
+  line-height: 1.375rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.exchange_field-wrap {
+  position: relative;
+}
+.exchange_toogle {
+  display: flex;
+  cursor: pointer;
+  margin-left: auto;
+  border: none;
+  background: none;
+}
+.toogle_image {
+  width: 38px;
+  height: 38px;
+}
+.exchange_field {
+  padding: 17px 20px;
+  box-sizing: border-box;
+  border: 2px solid #cfcfcf;
+  border-radius: 2px;
+  width: 100%;
+  color: #2e4057;
+  height: 56px;
+  font-size: 0.9375rem;
+  line-height: 1.375rem;
+  transition: 0.2s;
+}
+.exchange_img {
+  background: #f2f4f5;
+  height: 52px;
+  position: absolute;
+  top: 2px;
+  right: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 10px 0 14px;
+  cursor: pointer;
+  border: none;
+}
+.exchange__valet-img {
+  max-width: 100%;
+  width: 38px;
+  height: 38px;
+}
+.exchange__valet-arrow {
+  margin-left: 6px;
+  width: 12px;
+  height: 12px;
+}
+.exchange_footer {
+  padding: 0 40px;
+  padding-top: 30px;
+  padding-bottom: 40px;
+}
+.exchange_action {
+  background: #f73;
+  border-radius: 30px;
+  color: #fff;
+  text-align: center;
+  padding: 19px 80px;
+  box-sizing: border-box;
+  font-size: 0.9375rem;
+  line-height: 1.125rem;
+  font-weight: 700;
+  display: block;
+  margin: 0 auto;
+  border: none;
+  cursor: pointer;
+}
+.footer {
+  background: #2e4057;
+  padding: 64px 0 20px 0;
+}
+
+.footer_box {
+  display: flex;
+}
+.footer_info {
+  margin-right: 170px;
+}
+.footer_logo {
+  margin-bottom: 16px;
+  display: block;
+}
+.footer_image {
+}
+.footer_info-text {
+  font-size: 0.8125rem;
+  line-height: 1rem;
+  color: rgba(255, 255, 255, 0.5);
+  margin-bottom: 30px;
+}
+.footer_social {
+  display: flex;
+  align-items: center;
+}
+.footer_social_logo {
+  margin-right: 24px;
+}
+.social_logo-image {
+  opacity: 0.4;
+  width: 28px;
+  height: 28px;
+}
+.footer_tg_bot {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-top: 20px;
+}
+.tg_bot_logo {
+}
+.footer_tg-text {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 0.9375rem;
+}
+.footer_tg-text a {
+  color: #fff;
+}
+.footer_nav {
+  display: flex;
+  gap: 30px;
+  flex-direction: column;
+}
+.footer_nav-list {
+  display: flex;
+  gap: 40px;
+}
+.nav_list-link {
+  color: white;
+  font-size: 0.9375rem;
+  width: 140px;
+}
+.footer_list-item {
+  cursor: pointer;
+}
+.language_item {
+  display: flex;
+}
+.language_country {
+  width: 20px;
+  height: 20px;
+}
+.language_name {
+  font-size: 0.9375rem;
+  color: white;
+  margin: 0 10px;
+}
+.language_select {
+  width: 10px;
+  height: 10px;
+  align-self: center;
+}
+.footer_about {
+  margin-top: 80px;
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+}
+.footer_our-partners {
+  display: flex;
+  gap: 20px;
+}
+
+.footer_about-text {
+  font-size: 0.75rem;
+  line-height: 1.25rem;
+  color: rgba(255, 255, 255, 0.5);
+}

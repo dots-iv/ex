@@ -1,43 +1,319 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Exhub</title>
-</head>
-<body>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/reset.css" />
+  </head>
+  <body class="body">
     <div class="header">
-        <div class="container">
-            <div class="header_box">
-                <a href="">
-                    <img src="./img/logo.svg" alt="">
-                </a>
-            </div>
-            <div class="header_info">
-                быстрый автоматический обмен <br>
-                и поддержка 24/7
-            </div>
-            <div class="header_nav_menu">
-                <a href="" class="header_nav-link">
-                 Обмен за наличные   
-                </a>
-                <a href="" class="header_nav-link">
-DEX
-                </a>
-                <a href="" class="header_nav-link">
-Отзывы
-                </a>
-                <a href="" class="header_nav-link">
-<img src="" alt="">
-Поддержка
-                </a>
-                <a href="" class="header_nav-link">
-Войти
-                </a>
-            </div>
+      <div class="container">
+        <div class="header_box">
+          <a href="" class="header_logo">
+            <img class="logo_img" src="./img/logo.png" alt="" />
+          </a>
 
+          <div class="header_info">
+            быстрый автоматический обмен <br />
+            и поддержка 24/7
+          </div>
+          <div class="header_nav_menu">
+            <a href="" class="header_nav-link"> Обмен за наличные </a>
+            <a href="" class="header_nav-link"> DEX </a>
+            <a href="" class="header_nav-link"> Отзывы </a>
+            <a href="" class="header_nav-link">
+              <img class="messeage_image" src="./img/messeage_img.png" alt="" />
+              Поддержка
+            </a>
+            <a href="" class="header_nav-link"> Войти </a>
+          </div>
         </div>
+      </div>
     </div>
-</body>
+    <div class="prize_info">
+      <div class="container">
+        <div class="prize_box">
+          <div class="prize_tittle">
+            Разыгрываем 3 приза по 5000 RUB каждую неделю!
+          </div>
+          <a href="" class="prize_link"> Хочу участвовать </a>
+        </div>
+      </div>
+    </div>
+    <main class="main">
+      <section class="main_hero">
+        <div class="exchange_block">
+          <div class="container">
+            <div class="trade_box">
+              <div class="trade_info">
+                <h1 class="trade_tittle">
+                  Купить Bitcoin (BTC) за Bitcoin (BTC)
+                </h1>
+
+                <div class="trade_text">
+                  Главная ценность, которой мы обладаем — это наша репутация<br />
+                  и доверие наших клиентов, что подтверждает более
+                  <strong>20 000</strong><br /><strong
+                    >положительных отзывов </strong
+                  >на сервисах <a href="">BestChange </a>и<a href=""
+                    >ExchangeSumo</a
+                  >
+                </div>
+                <div class="trade_rules">
+                  <div class="trade_item">
+                    <img
+                      src="./img/trade_item-1.png"
+                      alt=""
+                      class="trade_icon"
+                    />
+                    <div class="trade_item_info">
+                      <div class="trade_item-tittle">Обменяем за 7 минут</div>
+                      <div class="trade_item-text">
+                        Среднее время совершения обмена
+                      </div>
+                    </div>
+                  </div>
+                  <div class="trade_item">
+                    <img
+                      src="./img/trade_item-2.png"
+                      alt=""
+                      class="trade_icon"
+                    />
+                    <div class="trade_item_info">
+                      <div class="trade_item-tittle">Ответим за 2 минуты</div>
+                      <div class="trade_item-text">
+                        Среднее время ответа нашего оператора
+                      </div>
+                    </div>
+                  </div>
+                  <div class="trade_item">
+                    <img
+                      src="./img/trade_item-3.png"
+                      alt=""
+                      class="trade_icon"
+                    />
+                    <div class="trade_item_info">
+                      <div class="trade_item-tittle">
+                        Более 1000 направлений обмена
+                      </div>
+                      <div class="trade_item-text">
+                        Самые популярные валюты в одном месте
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="exchange_main">
+                <div class="exchange_header">
+                  <div class="exchange_tittle">Введите данные для обмена</div>
+                  <div class="exchange_header-info">
+                    Верификация не требуется
+                  </div>
+                </div>
+                <div class="exchange_info">
+                  <div class="exchange_info_container">
+                    <div class="exchange_info_value">1.0071935 BTC = 1 BTC</div>
+                    <div class="exchange_info_value">00 : 01</div>
+                  </div>
+                  <div class="exchange_info_container">
+                    <div class="exchange_info_text">
+                      Плавающий курс <a href="">подробнее</a>
+                    </div>
+                    <div class="exchange_info_text">Курс актуален</div>
+                  </div>
+                </div>
+                <div class="exchange_fields">
+                  <div class="exchange_field-item">
+                    <div class="exchange_field-header">
+                      Отдаете Bitcoin (BTC)
+                    </div>
+                    <div class="exchange_field-wrap">
+                      <input
+                        type="text"
+                        placeholder="0.07334384 – 3.60842682 BTC"
+                        class="exchange_field"
+                      />
+                      <button class="exchange_img">
+                        <img
+                          src="./img/BTC.svg"
+                          alt=""
+                          class="exchange__valet-img"
+                        />
+                        <img
+                          src="./img/arrow.png"
+                          alt=""
+                          class="exchange__valet-arrow"
+                        />
+                      </button>
+                    </div>
+                  </div>
+                  <div class="exchange_field-item">
+                    <div class="exchange_field-header">
+                      Получаете Bitcoin (BTC)
+                      <button class="exchange_toogle">
+                        <img
+                          class="toogle_image"
+                          src="./img/toogle_ex.png"
+                          alt=""
+                        />
+                      </button>
+                    </div>
+                    <div class="exchange_field-wrap">
+                      <input
+                        type="text"
+                        placeholder="0.07334384 – 3.60842682 BTC"
+                        class="exchange_field"
+                      />
+                      <button class="exchange_img">
+                        <img
+                          src="./img/BTC.svg"
+                          alt=""
+                          class="exchange__valet-img"
+                        />
+                        <img
+                          src="./img/arrow.png"
+                          alt=""
+                          class="exchange__valet-arrow"
+                        />
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="exchange_footer">
+                  <button class="exchange_action">Перейти к оплате</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer_box">
+          <div class="footer_info">
+            <div class="footer_logo">
+              <img class="footer_image" src="./img/footer_logo.png" alt="" />
+            </div>
+            <div class="footer_info-text">
+              быстрый автоматический обмен<br />
+              и поддержка 24/7
+            </div>
+            <div class="footer_social">
+              <a href="" class="footer_social_logo">
+                <img
+                  src="./img/tg_social.png"
+                  alt=""
+                  class="social_logo-image"
+                />
+              </a>
+              <a href="" class="footer_social_logo">
+                <img
+                  src="./img/vk_social.png"
+                  alt=""
+                  class="social_logo-image"
+                />
+              </a>
+              <a href="" class="footer_social_logo">
+                <img
+                  src="./img/twitter_social.png"
+                  alt=""
+                  class="social_logo-image"
+                />
+              </a>
+              <a href="" class="footer_social_logo">
+                <img
+                  src="./img/youtube_social.png"
+                  alt=""
+                  class="social_logo-image"
+                />
+              </a>
+            </div>
+            <div class="footer_tg_bot">
+              <img src="./img/tg_bot-logo.png" alt="" class="tg_bot_logo" />
+              <div class="footer_tg-text">
+                Наш бот дотсупен по <a href="">ссылке</a>
+              </div>
+            </div>
+          </div>
+          <nav class="footer_nav">
+            <ul class="footer_nav-list">
+              <li class="nav_list-link">Все направления</li>
+              <li class="nav_list-link">О нас</li>
+              <li class="nav_list-link">Партнерам</li>
+              <li class="nav_list-link">
+                <div class="footer_list-item">
+                  <div class="language_item">
+                    <img
+                      src="./img/country_logo.png"
+                      alt=""
+                      class="language_country"
+                    />
+                    <div class="language_name">Ru</div>
+                    <img
+                      src="./img/drop_select.png"
+                      alt=""
+                      class="language_select"
+                    />
+                  </div>
+                </div>
+              </li>
+            </ul>
+            <ul class="footer_nav-list">
+              <li class="nav_list-link">Отзывы</li>
+              <li class="nav_list-link">FAQ</li>
+              <li class="nav_list-link">Контакты</li>
+              <li class="nav_list-link">Правила сервиса</li>
+            </ul>
+            <ul class="footer_nav-list">
+              <li class="nav_list-link">Карта сайта</li>
+              <li class="nav_list-link">AML политика</li>
+              <li class="nav_list-link">Рекомендации</li>
+            </ul>
+          </nav>
+        </div>
+        <div class="footer_about">
+          <div class="footer_our-partners">
+            <a href="" class="partners_logo">
+              <img
+                style="max-width: 100px; height: 20px"
+                src="./img/partner.png"
+                alt=""
+              />
+            </a>
+            <a href="" class="partners_logo">
+              <img
+                style="max-width: 100px; height: 20px"
+                src="./img/partner-1.png"
+                alt=""
+              />
+            </a>
+            <a href="" class="partners_logo">
+              <img
+                style="max-width: 100px; height: 20px"
+                src="./img/partners_2.png"
+                alt=""
+              />
+            </a>
+          </div>
+          <div class="footer_about-text">
+            Все транзакции проходят проверку AML через сервис
+            <a href="">getBlock</a>
+          </div>
+          <div class="footer_about-text">
+            © 2018–2023 ExHub.io - сервис обмена криптовалют
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>
