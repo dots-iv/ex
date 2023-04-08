@@ -472,7 +472,7 @@ a {
 .cash_tittle {
   text-align: center;
   margin-bottom: 50px;
-  margin: 0;
+
   font-size: 3.5rem;
   line-height: 4rem;
 }
@@ -961,4 +961,220 @@ h4 {
   width: 100%;
   background: linear-gradient(180deg, #ebebeb, #fff 51.85%);
   z-index: -1;
+}
+
+/* REVIEWS PAGE HTML  */
+
+.main {
+}
+.inner {
+  padding-top: 60px;
+  position: relative;
+}
+.inner:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  max-height: 740px;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(180deg, #ebebeb 0, #fff 51.85%);
+  z-index: -1;
+}
+
+.inner_tittle {
+  margin-bottom: 20px;
+
+  font-size: 3.5rem;
+  line-height: 4rem;
+}
+.reviews {
+  margin: 0 auto;
+  margin-top: 50px;
+}
+.review_list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 24px;
+  grid-row-gap: 40px;
+}
+.review_item {
+  background: rgba(46, 64, 87, 0.06);
+  border-radius: 12px;
+  padding: 30px;
+  box-sizing: border-box;
+  min-height: 234px;
+  display: flex;
+  flex-direction: column;
+}
+.reviews__title {
+  color: #2e4057;
+  font-size: 1.625rem;
+  line-height: 2.125rem;
+  display: block;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+.reviews__logo {
+  display: block;
+  margin-bottom: 16px;
+}
+.review_item-footer {
+  margin-top: auto;
+  padding-top: 20px;
+  border-top: 1px solid rgba(46, 64, 87, 0.2);
+}
+.reviews_footer-link {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  font-weight: 700;
+}
+.icon_right {
+  width: 44px;
+  height: 12px;
+  flex-shrink: 0;
+}
+.hame-reviews {
+  overflow-y: hidden;
+  overflow-x: auto;
+  margin-top: 100px;
+  margin-bottom: 40px;
+}
+
+.hame-reviews_list {
+  display: -webkit-inline-box;
+}
+.hame-reviews_box {
+  display: flex;
+  position: relative;
+  align-items: center;
+  transition: 0.2s;
+}
+.hame-reviews_box span {
+  color: #9f9f9f;
+  cursor: pointer;
+  transition: 0.2s;
+}
+.hame_reviews_link {
+  display: flex;
+  align-items: center;
+}
+.hame-reviews_box:after {
+  content: " ";
+  margin: 0 10px;
+  background: #9f9f9f;
+  width: 18px;
+  height: 1px;
+}
+.hame-reviews_box:last-child {
+  margin-right: 0;
+}
+
+/* VHODDDDDDDDD */
+
+.vhod_block {
+  margin-top: 20px;
+  margin-bottom: 100px;
+}
+.container {
+}
+.vhod_box {
+  background: #fff;
+  box-shadow: 0 0 14px rgba(39, 39, 39, 0.2);
+  border-radius: 20px;
+  display: grid;
+  grid-template-columns: 1fr 368px;
+  width: 792px;
+  margin: 0 auto;
+  overflow: hidden;
+  min-height: 342px;
+}
+
+.vhod_form {
+  padding: 40px;
+  box-sizing: border-box;
+}
+.vhod_header {
+  display: flex;
+  margin-bottom: 20px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.vhod_header-tittle {
+  margin: 0;
+  font-size: 1.625rem;
+  line-height: 2.125rem;
+}
+.vhod_header-link {
+  font-size: 0.8125rem;
+  border-bottom: 1px solid #f73;
+}
+.vhod_form-list {
+  margin-top: 20px;
+}
+.vhod_form-item {
+  position: relative;
+  width: 100%;
+  margin-bottom: 20px;
+}
+.vhod_form-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 6px;
+  font-weight: 600;
+}
+.vhod_form-field {
+  padding: 17px 20px;
+  box-sizing: border-box;
+  border: 2px solid #cfcfcf;
+  border-radius: 2px;
+  width: 100%;
+  color: var(--text);
+  height: 56px;
+  background: 0 0;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  font-size: 0.9375rem;
+  line-height: 1.375rem;
+  transition: 0.2s;
+}
+.vhod_form-action {
+  border: none;
+  background: #f73;
+  border-radius: 30px;
+  color: #fff;
+  text-align: center;
+  padding: 19px 0;
+  box-sizing: border-box;
+  cursor: pointer;
+  font-size: 0.9375rem;
+  line-height: 1.125rem;
+  font-weight: 700;
+  width: 100%;
+  display: block;
+  margin-top: 30px;
+}
+.vhod_info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 30px;
+  background: url(/img/bg_enter.png);
+}
+.vhod_info-tittle {
+  width: 222px;
+  height: 50px;
+  margin-bottom: 16px;
+}
+.vhod_ingo-text {
+  font-size: 0.8125rem;
+  line-height: 1.25rem;
 }
