@@ -13,6 +13,19 @@
     />
     <link rel="stylesheet" href="./css/main.css" />
     <link rel="stylesheet" href="./css/reset.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
   </head>
   <body class="body">
     <div class="header">
@@ -41,20 +54,235 @@
     </div>
     <section class="cash">
       <div class="container">
-        <div class="cash_tittle">
+        <h1 class="cash_tittle">
           Купить Bitcoin (BTC) за Наличные RUB в г.Москва
-        </div>
+        </h1>
         <form class="cash_form">
           <div class="cash_header">
             <div class="cash_header-info">
               <div class="cash_header-option">
                 2 335 181.8112 RUB : 1 BTC <span>плавающий курс</span>
               </div>
+              <div class="cash_header-option">
+                00 : 31 <span>актуально</span>
+              </div>
             </div>
+            <div class="cash_header-text">
+              <div class="info">
+                <strong>Введите данные для обмена</strong><br />Верификация не
+                требуеться
+              </div>
+              <a href="" class="instruction">Инструкция по обмену</a>
+            </div>
+          </div>
+          <div class="cash_fields">
+            <div class="cash_fields_item">
+              <div class="cash_fields-header">Выберите город</div>
+              <div class="cash_fields-select">
+                <div class="select_wrapper">
+                  <div class="select_name">Москва</div>
+                  <img src="./img/arrow.png" alt="" class="icon-select" />
+                </div>
+              </div>
+            </div>
+            <div class="cash_fields_item">
+              <div class="cash_fields-with_toogle">Отдаете Наличные RUB</div>
+              <div class="select_wrapper">
+                <input
+                  type="text"
+                  class="cash_field-exchange"
+                  placeholder="302 000 – 9 800 000 RUB"
+                />
+                <button class="cash_valet">
+                  <img src="./img/rubl.svg" alt="" class="cash_valet-img" />
+                  <img src="./img/arrow.png" alt="" class="cash__valet-arrow" />
+                </button>
+              </div>
+            </div>
+            <div class="cash_fields_item">
+              <div class="cash_fields-with_toogle">
+                Получаете Bitcoin (BTC)
+                <div class="fields_header-info">Резерв 12 BTC</div>
+              </div>
+              <div class="select_wrapper">
+                <input
+                  type="text"
+                  class="cash_field-exchange"
+                  placeholder="302 000 – 9 800 000 RUB"
+                />
+                <button class="cash_valet">
+                  <img src="./img/BTC.svg" alt="" class="cash__valet-img" />
+                  <img src="./img/arrow.png" alt="" class="cash__valet-arrow" />
+                </button>
+              </div>
+            </div>
+            <div class="cash_fields_item">
+              <div class="cash_fields-with_toogle">Имя</div>
+              <div class="select_wrapper">
+                <input type="text" class="cash_сlient-name" />
+              </div>
+            </div>
+            <div class="cash_fields_item">
+              <div class="cash_fields-with_toogle">E-mail</div>
+              <div class="select_wrapper">
+                <input type="email" class="cash_сlient-mail" />
+                <div class="class_mail-icon">
+                  <img src="./img/mail_icon.png" alt="" />
+                </div>
+              </div>
+            </div>
+            <div class="cash_fields_item">
+              <div class="cash_fields-with_toogle">Телефон или Telegram</div>
+              <div class="select_wrapper">
+                <input
+                  type="text"
+                  class="cash_contact"
+                  placeholder="Телефон или имя пользователя Telegram"
+                />
+              </div>
+            </div>
+          </div>
+          <button class="cash_action">Следующий шаг</button>
+          <div class="cash_agree">
+            Нажимая кнопку «Перейти к оплате», Вы подтверждаете свое согласие с
+            <a href="">пользовательским соглашением</a> сервиса ExHub.io
           </div>
         </form>
       </div>
     </section>
+    <section class="how">
+      <div class="container">
+        <h2 class="how_tittle">
+          Для проведения обмена Наличные RUB на Bitcoin (BTC), просим выполнить
+          простые действия.
+        </h2>
+        <div class="how_box">
+          <div class="how_box-info">
+            <ol>
+              <li>Используйте калькулятор на сайте для расчета суммы обмена</li>
+              <li>
+                Заполните все поля и создайте заявку на сайте. Будьте
+                внимательны при вводе данных.
+              </li>
+              <li>
+                Напишите в чат с номером заявки для консультации с нашим
+                менеджером по обмену.
+              </li>
+            </ol>
+            <strong>Обратите внимание!</strong>
+            <p>
+              Принимаем наличные средства исключительно в офисе обменного
+              пункта, а так же при обмене мы можем попросить Вас предъявить
+              документы
+            </p>
+            <p>Курс фиксируется с момента передачи наличных в кассу.</p>
+            <p>
+              Для самостоятельного расчета комиссии обменного пункта
+              воспользуйтесь формулой:курс за 1 BTC/курс биржи Okx
+              (BTC/USDT)/MOEX
+            </p>
+          </div>
+          <img src="./img/how.png" alt="" class="how_box-img" />
+          <img src="./img/how-1.png" alt="" class="how_box-img_last" />
+          <div class="how_box-info">
+            <p>
+              Для обмена суммы меньше минимальной уточните у менеджера, такие
+              процедуры имеют дополнительную комиссию.
+            </p>
+            <p>
+              Воспользуйтесь услугами персонального менеджера с обслуживанием в
+              отдельной кассе. По всем вопросам обращайтесь к оператору в чат.
+            </p>
+            <p>
+              Необходимо будет сверить сумму наличных с суммой в заявке и
+              провести тестовую транзакцию. После этого направим криптовалюту на
+              Ваш кошелек.
+            </p>
+            <p>Произвести обмен в кассе возможно строго до 20:30</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="reviews_cash">
+      <div class="container">
+        <h2 class="reviews_cash-tittle">Отзывы о нас</h2>
+        <div class="reviews_cash-text">
+          Еще больше отзывов о наши сервисе можете почитать на
+          <a href="">Bestchange</a>
+        </div>
+      </div>
+      <div class="reviews-cash__scroll">
+        <button class="scroll_prev">
+          <img src="./img/arrow.png" alt="" class="scroll_prev-logo" />
+        </button>
+        <div class="multiple-items_cash-scroll">
+          <div class="item_cash-scroll" style="height: auto; width: 357.333px">
+            <div class="item_cash-name">Артур</div>
+            <div class="item_cash-text">
+              Отличный сервис. Быстро, надёжно всем рекомендую.
+            </div>
+          </div>
+          <div class="item_cash-scroll" style="height: auto; width: 357.333px">
+            <div class="item_cash-name">Виктор</div>
+            <div class="item_cash-text">
+              Все прошло как и всегда оперативно и качественно! Спасибо сервису!
+            </div>
+          </div>
+          <div class="item_cash-scroll" style="height: auto; width: 357.333px">
+            <div class="item_cash-name">Сергей</div>
+            <div class="item_cash-text">
+              Пользуюсь этим обменником уже второй раз. Все прошло оперативно,
+              без проблем. Спасибо! Рекомендую!.
+            </div>
+          </div>
+          <div class="item_cash-scroll" style="height: auto; width: 357.333px">
+            <div class="item_cash-name">Лариса</div>
+            <div class="item_cash-text">
+              Топовый сервис, быстрый и быстрый никаких проблем за всё время
+              нашего сотрудничества, так держать. Рекомендую
+            </div>
+          </div>
+          <div class="item_cash-scroll" style="height: auto; width: 357.333px">
+            <div class="item_cash-name">Александр</div>
+            <div class="item_cash-text">
+              Обмен прошёл без шума и пыли. Быстро и чётко.
+            </div>
+          </div>
+          <div class="item_cash-scroll" style="height: auto; width: 357.333px">
+            <div class="item_cash-name">Ольга</div>
+            <div class="item_cash-text">
+              Пользуюсь уже давно. Отличный обменник. Рекомендую к
+              сотрудничеству!
+            </div>
+          </div>
+          <div class="item_cash-scroll" style="height: auto; width: 357.333px">
+            <div class="item_cash-name">Виталик</div>
+            <div class="item_cash-text">
+              Все как всегда без проблем. Уже несколько лет и ни разу не
+              подвели. Спасибо!)
+            </div>
+          </div>
+          <div class="item_cash-scroll" style="height: auto; width: 357.333px">
+            <div class="item_cash-name">Маша</div>
+            <div class="item_cash-text">
+              Спасибо всем сотрудникам обмена, все быстро и чётко
+            </div>
+          </div>
+          <div class="item_cash-scroll" style="height: auto; width: 357.333px">
+            <div class="item_cash-name">Сергей</div>
+            <div class="item_cash-text">
+              Обменник который вышел на новый уровень! Нет лишних вопросов,
+              авторизаций, подтверждений. Быстро, просто, надёжно. Ничего
+              лишнего, только бизнес!
+            </div>
+          </div>
+        </div>
+        <button class="scroll_next">
+          <img src="./img/arrow.png" alt="" class="scroll_next-logo" />
+        </button>
+      </div>
+    </section>
+
     <footer class="footer">
       <div class="container">
         <div class="footer_box">
@@ -173,5 +401,19 @@
         </div>
       </div>
     </footer>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"
+      integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+      integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="./js/main.js"></script>
   </body>
 </html>
