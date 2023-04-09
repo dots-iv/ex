@@ -521,7 +521,7 @@ a {
   height: auto;
   width: 357.333px;
 }
-.slider {
+.slider_content {
   display: flex;
   justify-content: space-between;
 }
