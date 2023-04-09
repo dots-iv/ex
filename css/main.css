@@ -521,7 +521,10 @@ a {
   height: auto;
   width: 357.333px;
 }
-
+.item_cash-scroll {
+  height: auto;
+  width: 357.333px;
+}
 .instruction {
   border-bottom: 1px solid #f73;
 }
