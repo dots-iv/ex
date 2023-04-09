@@ -521,9 +521,16 @@ a {
   height: auto;
   width: 357.333px;
 }
+.slider {
+  display: flex;
+  justify-content: space-between;
+}
 .item_cash-scroll {
   height: auto;
   width: 357.333px;
+}
+#slider-container {
+  max-width: 1072px; /* 3 слайда * 357.333px */
 }
 .instruction {
   border-bottom: 1px solid #f73;
