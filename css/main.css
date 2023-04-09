@@ -517,6 +517,10 @@ a {
   line-height: 1.375rem;
   color: #9f9f9f;
 }
+.item_cash-text {
+  height: auto;
+  width: 357.333px;
+}
 
 .instruction {
   border-bottom: 1px solid #f73;
