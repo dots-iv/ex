@@ -1761,6 +1761,10 @@ h4 {
   .footer_list-item {
     order: 1;
   }
+  .review_list {
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
+  }
   .footer_about {
     margin-top: 40px;
   }
@@ -1854,5 +1858,11 @@ h4 {
 @media (max-width: 367px) {
   .ex_select {
     padding: 10px 20px;
+  }
+}
+
+@media (max-width: 350px) {
+  .help-button {
+    margin-left: 23px;
   }
 }
