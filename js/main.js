@@ -1,23 +1,13 @@
-$('.multiple-items_cash-scroll').slick({
-  slidesToShow: 3,
-  slidesToScroll: 1,
-  autoplay: true,
-  autoplaySpeed: 2000,
-  dots: true,
-  prevArrow: $('.scroll_prev-logo'),
-  nextArrow: $('.scroll_next-logo'),
-  responsive: [
-    {
-      breakpoint: 768,
-      settings: {
-        slidesToShow: 2
-      }
-    },
-    {
-      breakpoint: 480,
-      settings: {
-        slidesToShow: 1
-      }
-    }
-  ]
+$(document).ready(function(){
+  $('.slider').slick({
+    arrows: true,
+    dots: true,
+    autoplay: true,
+    autoplaySpeed: 5000,
+    speed: 1000,
+    infinite: true,
+    slidesToShow: 3,
+    slidesToScroll: 3
+  });
 });
+
