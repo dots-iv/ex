@@ -4,7 +4,23 @@ $(document).ready(function(){
     slidesToShow: 3,
     slidesToScroll: 3,
     prevArrow: $('.slide_prev'),
-        nextArrow: $('.slide_next'),
+    nextArrow: $('.slide_next'),
+    responsive: [
+      {
+        breakpoint: 700,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+        }
+      },
+      {
+        breakpoint: 500,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        }
+      }
+    ]
   });
 
   $('.burger').click(function() {
