@@ -30,18 +30,18 @@ $(document).ready(function(){
     $('.body').toggleClass("active")
     
   })
-  $('.exchange_img, .exchange_img img').click(function(event) {
-    $('.hidden-bot').removeClass('active'); // закрываем второе меню
-    $('.hidden').toggleClass("active"); // открываем первое меню
-    $('.hidden_list-item.active').removeClass('active'); // удаляем класс active у текущего элемента
-    $('.hidden_list-item:first').addClass('active'); // добавляем класс active к первому элементу по умолчанию
-    event.stopPropagation();
-  });
-  
-  $('.hidden_list-item').click(function() {
-    $('.hidden_list-item.active').removeClass('active'); // удаляем класс active у текущего элемента
-    $(this).addClass('active'); // добавляем класс active к выбранному элементу
-  });
+ $('.exchange_img, .exchange_img img').click(function(event) {
+  $('.hidden-bot').removeClass('active'); // закрываем второе меню
+  $('.hidden').toggleClass("active"); // открываем первое меню
+  $('.hidden_list-item.active').removeClass('active'); // удаляем класс active у текущего элемента
+  $('.hidden_list-item:first').addClass('active'); // добавляем класс active к первому элементу по умолчанию
+  event.stopPropagation();
+});
+
+$('.hidden_list-item').click(function() {
+  $('.hidden_list-item.active').removeClass('active'); // удаляем класс active у текущего элемента
+  $(this).addClass('active'); // добавляем класс active к выбранному элементу
+});
   
   $('.exchange_img-bot, .exchange_img-bot img').click(function(event) {
     $('.hidden').removeClass('active'); // закрываем первое меню
@@ -55,6 +55,19 @@ $(document).ready(function(){
       $('.hidden').removeClass('active');
       $('.hidden-bot').removeClass('active');
     }
+  });
+  $('.hidden_choose-link').on('click', function() {
+    var filter = $(this).data('filter');
+    
+    $('.hidden_list-item').each(function() {
+      var categories = $(this).data('category');
+      
+      if (categories.indexOf(filter) > -1 || filter === 'all') {
+        $(this).show();
+      } else {
+        $(this).hide();
+      }
+    });
   });
 });
 

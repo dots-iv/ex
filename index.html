@@ -751,24 +751,39 @@
                           />
                         </div>
                         <div class="hidden_choose">
-                          <button class="hidden_choose-link">
+                          <button class="hidden_choose-link" data-filter="all">
                             <span>Все</span>
                           </button>
-                          <button class="hidden_choose-link">
+                          <button
+                            class="hidden_choose-link"
+                            data-filter="crypto"
+                          >
                             <span>Криптовалюты</span>
                           </button>
-                          <button class="hidden_choose-link">
+                          <button
+                            class="hidden_choose-link"
+                            data-filter="payment"
+                          >
                             <span>Платежные системы</span>
                           </button>
-                          <button class="hidden_choose-link">
+                          <button
+                            class="hidden_choose-link"
+                            data-filter="bank-rub"
+                          >
                             <span>Банки RUB</span>
                           </button>
-                          <button class="hidden_choose-link">
+                          <button
+                            class="hidden_choose-link"
+                            data-filter="bank-kzt"
+                          >
                             <span>Банки KZT</span>
                           </button>
                         </div>
                         <div class="hidden_list">
-                          <div class="hidden_list-item active">
+                          <div
+                            class="hidden_list-item active"
+                            data-category="all crypto"
+                          >
                             <div class="hidden_item-row">
                               <img
                                 src="./img/BTC.png"
@@ -1242,7 +1257,10 @@
                               </div>
                             </div>
                           </div>
-                          <div class="hidden_list-item">
+                          <div
+                            class="hidden_list-item"
+                            data-category="all payment"
+                          >
                             <div class="hidden_item-row">
                               <img
                                 src="./img/Авангард.png"
