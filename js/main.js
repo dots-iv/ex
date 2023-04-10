@@ -30,5 +30,20 @@ $(document).ready(function(){
     $('.body').toggleClass("active")
     
   })
+  $('.exchange_img, .exchange_img img').click(function(event) {
+    $(this).siblings('.hidden').toggleClass("active");
+    event.stopPropagation();
+  });
+  
+  $('.hidden').click(function(event) {
+    event.stopPropagation();
+  });
+  
+  $(document).click(function(event) {
+    if (!$(event.target).closest('.exchange_img').length && !$(event.target).closest('.hidden').length) {
+      $('.hidden').removeClass('active');
+    }
+  });
+  
 });
 
