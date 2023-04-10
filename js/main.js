@@ -62,5 +62,17 @@ $('.hidden_list-item').click(function() {
   $('.hidden_header-close').on('click', function() {
     $('.hidden-bot').removeClass('active');
   });
+  
+
+  $('.cash_valet').click(function() {
+    $('.hidden').addClass('active');
+  });
+
+
+
+
+
+
+  
 });
 

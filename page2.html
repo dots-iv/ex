@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" href="/img/faviconV2.png">
+    <link rel="icon" href="/img/faviconV2.png" />
     <title>Обмен за наличные</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -111,10 +111,26 @@
             <div class="cash_fields_item">
               <div class="cash_fields-header">Выберите город</div>
               <div class="cash_fields-select">
-                <div class="select_wrapper">
-                  <div class="select_name">Los-Angeles</div>
-                  <img src="./img/arrow.png" alt="" class="icon-select" />
-                </div>
+                <select name="city" id="city" class="select_wrapper_top">
+                  <option disabled="disabled" selected="selected">
+                    Выберите город
+                  </option>
+                  <option value="MSK">Москва</option>
+                  <option value="MSK">Москва</option>
+                  <option value="SPB">Санкт-Петербург</option>
+                  <option value="EKB">Екатеринбург</option>
+                  <option value="KZN">Казань</option>
+                  <option value="KRASN">Краснодар</option>
+                  <option value="NSK">Новосибирск</option>
+                  <option value="RSND">Ростов-на-Дону</option>
+                  <option value="SOCHI">Сочи</option>
+                  <option value="STAM">Стамбул</option>
+                  <option value="DUBAI">Дубай</option>
+                  <option value="ERVN">Ереван</option>
+                  <option value="ANTL">Анталья</option>
+                  <option value="ALM">Алма-Ата</option>
+                </select>
+                <img src="./img/arrow.png" alt="" class="icon-select" />
               </div>
             </div>
             <div class="cash_fields_item">
@@ -146,6 +162,482 @@
                   <img src="./img/BTC.svg" alt="" class="cash__valet-img" />
                   <img src="./img/arrow.png" alt="" class="cash__valet-arrow" />
                 </button>
+                <div class="hidden">
+                  <div class="hidden_header">
+                    <h3 class="hiden_header-tittle">Выберите систему:</h3>
+                    <button class="hidden_header-close">
+                      <img
+                        style="height: 20px; width: 20px"
+                        src="./img/icon_close-img.png"
+                        alt=""
+                        class="icon_close"
+                      />
+                    </button>
+                  </div>
+                  <div class="hidden_search">
+                    <input
+                      type="search"
+                      class="hidden_search-field"
+                      placeholder="Поиск"
+                    />
+                  </div>
+                  <div class="hidden_choose">
+                    <button class="hidden_choose-link">
+                      <span>Все</span>
+                    </button>
+                    <button class="hidden_choose-link">
+                      <span>Криптовалюты</span>
+                    </button>
+                    <button class="hidden_choose-link">
+                      <span>Платежные системы</span>
+                    </button>
+                    <button class="hidden_choose-link">
+                      <span>Банки RUB</span>
+                    </button>
+                    <button class="hidden_choose-link">
+                      <span>Банки KZT</span>
+                    </button>
+                  </div>
+                  <div class="hidden_list">
+                    <div class="hidden_list-item">
+                      <div class="hidden_item-row">
+                        <img
+                          src="./img/BTC.png"
+                          alt=""
+                          class="hidden_img-item"
+                        />
+                        <div class="hidden_item-wrapper">
+                          <span class="hidden_item-name">Bitcoin (BTC)</span>
+                        </div>
+                      </div>
+                      <div class="hidden_item-row">
+                        <img
+                          src="./img/Tether BEP20 (USDT).png"
+                          alt=""
+                          class="hidden_img-item"
+                        />
+                        <div class="hidden_item-wrapper">
+                          <span class="hidden_item-name"
+                            >Tether BEP20 (USDT)</span
+                          >
+                        </div>
+                      </div>
+                      <div class="hidden_item-row">
+                        <img
+                          src="./img/Tether BEP20 (USDT).png"
+                          alt=""
+                          class="hidden_img-item"
+                        />
+                        <div class="hidden_item-wrapper">
+                          <span class="hidden_item-name"
+                            >Tether ERC20 (USDT)</span
+                          >
+                        </div>
+                      </div>
+                      <div class="hidden_item-row">
+                        <img
+                          src="./img/Tether BEP20 (USDT).png"
+                          alt=""
+                          class="hidden_img-item"
+                        />
+                        <div class="hidden_item-wrapper">
+                          <span class="hidden_item-name"
+                            >Tether TRC20 (USDT)</span
+                          >
+                        </div>
+                      </div>
+                      <div class="hidden_item-row">
+                        <img
+                          src="./img/NEAR Protocol (NEAR).png"
+                          alt=""
+                          class="hidden_img-item"
+                        />
+                        <div class="hidden_item-wrapper">
+                          <span class="hidden_item-name"
+                            >NEAR Protocol (NEAR)</span
+                          >
+                        </div>
+                      </div>
+                      <div class="hidden_item-row">
+                        <img
+                          src="./img/WhiteBIT Token TRC-20.png"
+                          alt=""
+                          class="hidden_img-item"
+                        />
+                        <div class="hidden_item-wrapper">
+                          <span class="hidden_item-name"
+                            >WhiteBIT Token TRC-20</span
+                          >
+                        </div>
+                      </div>
+                      <div class="hidden_item-row">
+                        <img
+                          src="./img/USD Coin (USDC ERC20).png"
+                          alt=""
+                          class="hidden_img-item"
+                        />
+                        <div class="hidden_item-wrapper">
+                          <span class="hidden_item-name"
+                            >USD Coin (USDC ERC20)</span
+                          >
+                        </div>
+                      </div>
+                      <div class="hidden_item-row">
+                        <img
+                          src="./img/WhiteBIT Token TRC-20.png"
+                          alt=""
+                          class="hidden_img-item"
+                        />
+                        <div class="hidden_item-wrapper">
+                          <span class="hidden_item-name"
+                            >WhiteBIT Token ERC-20</span
+                          >
+                        </div>
+                      </div>
+                      <div class="hidden_item-row">
+                        <img
+                          src="./img/USD Coin (USDC ERC20).png"
+                          alt=""
+                          class="hidden_img-item"
+                        />
+                        <div class="hidden_item-wrapper">
+                          <span class="hidden_item-name"
+                            >USD Coin (USDC TRC20)</span
+                          >
+                        </div>
+                      </div>
+                      <div class="hidden_item-row">
+                        <img
+                          src="./img/Polkadot (DOT).png"
+                          alt=""
+                          class="hidden_img-item"
+                        />
+                        <div class="hidden_item-wrapper">
+                          <span class="hidden_item-name">Polkadot (DOT)</span>
+                        </div>
+                      </div>
+                      <div class="hidden_item-row">
+                        <img
+                          src="./img/Cardano (ADA).png"
+                          alt=""
+                          class="hidden_img-item"
+                        />
+                        <div class="hidden_item-wrapper">
+                          <span class="hidden_item-name">Cardano (ADA)</span>
+                        </div>
+                      </div>
+                      <div class="hidden_item-row">
+                        <img
+                          src="./img/Dai (DAI).png"
+                          alt=""
+                          class="hidden_img-item"
+                        />
+                        <div class="hidden_item-wrapper">
+                          <span class="hidden_item-name">Dai (DAI)</span>
+                        </div>
+                      </div>
+                      <div class="hidden_item-row">
+                        <img
+                          src="./img/Polygon (MATIC).png"
+                          alt=""
+                          class="hidden_img-item"
+                        />
+                        <div class="hidden_item-wrapper">
+                          <span class="hidden_item-name">Polygon (MATIC)</span>
+                        </div>
+                      </div>
+                      <div class="hidden_item-row">
+                        <img
+                          src="./img/Ethereum (ETH).png"
+                          alt=""
+                          class="hidden_img-item"
+                        />
+                        <div class="hidden_item-wrapper">
+                          <span class="hidden_item-name">Ethereum (ETH)</span>
+                        </div>
+                      </div>
+                      <div class="hidden_item-row">
+                        <img
+                          src="./img/Litecoin (LTC).png"
+                          alt=""
+                          class="hidden_img-item"
+                        />
+                        <div class="hidden_item-wrapper">
+                          <span class="hidden_item-name">Litecoin (LTC)</span>
+                        </div>
+                      </div>
+                      <div class="hidden_item-row">
+                        <img
+                          src="./img/Bitcoin Cash (BCH).png"
+                          alt=""
+                          class="hidden_img-item"
+                        />
+                        <div class="hidden_item-wrapper">
+                          <span class="hidden_item-name"
+                            >Bitcoin Cash (BCH)</span
+                          >
+                        </div>
+                      </div>
+                      <div class="hidden_item-row">
+                        <img
+                          src="./img/Dash (DASH).png"
+                          alt=""
+                          class="hidden_img-item"
+                        />
+                        <div class="hidden_item-wrapper">
+                          <span class="hidden_item-name">Dash (DASH)</span>
+                        </div>
+                      </div>
+                      <div class="hidden_item-row">
+                        <img
+                          src="./img/Zcash (ZEC).png"
+                          alt=""
+                          class="hidden_img-item"
+                        />
+                        <div class="hidden_item-wrapper">
+                          <span class="hidden_item-name">Zcash (ZEC)</span>
+                        </div>
+                      </div>
+                      <div class="hidden_item-row">
+                        <img
+                          src="./img/Ripple (XRP).png"
+                          alt=""
+                          class="hidden_img-item"
+                        />
+                        <div class="hidden_item-wrapper">
+                          <span class="hidden_item-name">Ripple (XRP)</span>
+                        </div>
+                      </div>
+                      <div class="hidden_item-row">
+                        <img
+                          src="./img/Dogecoin (DOGE).png"
+                          alt=""
+                          class="hidden_img-item"
+                        />
+                        <div class="hidden_item-wrapper">
+                          <span class="hidden_item-name">Dogecoin (DOGE)</span>
+                        </div>
+                      </div>
+                      <div class="hidden_item-row">
+                        <img
+                          src="./img/Monero (XMR).png"
+                          alt=""
+                          class="hidden_img-item"
+                        />
+                        <div class="hidden_item-wrapper">
+                          <span class="hidden_item-name">Monero (XMR)</span>
+                        </div>
+                      </div>
+                      <div class="hidden_item-row">
+                        <img
+                          src="./img/Ethereum Classic (ETC).png"
+                          alt=""
+                          class="hidden_img-item"
+                        />
+                        <div class="hidden_item-wrapper">
+                          <span class="hidden_item-name"
+                            >Ethereum Classic (ETC)</span
+                          >
+                        </div>
+                      </div>
+                      <div class="hidden_item-row">
+                        <img
+                          src="./img/Stellar (XLM).png"
+                          alt=""
+                          class="hidden_img-item"
+                        />
+                        <div class="hidden_item-wrapper">
+                          <span class="hidden_item-name">Stellar (XLM)</span>
+                        </div>
+                      </div>
+                      <div class="hidden_item-row">
+                        <img
+                          src="./img/Waves (WAVES).png"
+                          alt=""
+                          class="hidden_img-item"
+                        />
+                        <div class="hidden_item-wrapper">
+                          <span class="hidden_item-name">Waves (WAVES)</span>
+                        </div>
+                      </div>
+                      <div class="hidden_item-row">
+                        <img
+                          src="./img/Tron (TRX).png"
+                          alt=""
+                          class="hidden_img-item"
+                        />
+                        <div class="hidden_item-wrapper">
+                          <span class="hidden_item-name">Tron (TRX)</span>
+                        </div>
+                      </div>
+                      <div class="hidden_item-row">
+                        <img
+                          src="./img/Qiwi RUB.png"
+                          alt=""
+                          class="hidden_img-item"
+                        />
+                        <div class="hidden_item-wrapper">
+                          <span class="hidden_item-name">Qiwi RUB</span>
+                        </div>
+                      </div>
+                      <div class="hidden_item-row">
+                        <img
+                          src="/img/ЮMoney.png"
+                          alt=""
+                          class="hidden_img-item"
+                        />
+                        <div class="hidden_item-wrapper">
+                          <span class="hidden_item-name">ЮMoney</span>
+                        </div>
+                      </div>
+                      <div class="hidden_item-row">
+                        <img
+                          src="./img/Perfect Money USD.png"
+                          alt=""
+                          class="hidden_img-item"
+                        />
+                        <div class="hidden_item-wrapper">
+                          <span class="hidden_item-name"
+                            >Perfect Money USD</span
+                          >
+                        </div>
+                      </div>
+                      <div class="hidden_item-row">
+                        <img
+                          src="./img/Сбербанк RUB.png"
+                          alt=""
+                          class="hidden_img-item"
+                        />
+                        <div class="hidden_item-wrapper">
+                          <span class="hidden_item-name">Сбербанк RUB</span>
+                        </div>
+                      </div>
+                      <div class="hidden_item-row">
+                        <img
+                          src="./img/Тинькофф.png"
+                          alt=""
+                          class="hidden_img-item"
+                        />
+                        <div class="hidden_item-wrapper">
+                          <span class="hidden_item-name">Тинькофф</span>
+                        </div>
+                      </div>
+                      <div class="hidden_item-row">
+                        <img
+                          src="./img/Альфа-Банк RUB.png"
+                          alt=""
+                          class="hidden_img-item"
+                        />
+                        <div class="hidden_item-wrapper">
+                          <span class="hidden_item-name">Альфа-Банк RUB</span>
+                        </div>
+                      </div>
+                      <div class="hidden_item-row">
+                        <img
+                          src="./img/Почта банк.png"
+                          alt=""
+                          class="hidden_img-item"
+                        />
+                        <div class="hidden_item-wrapper">
+                          <span class="hidden_item-name">Почта банк</span>
+                        </div>
+                      </div>
+                      <div class="hidden_item-row">
+                        <img
+                          src="./img/Россельхозбанк.png"
+                          alt=""
+                          class="hidden_img-item"
+                        />
+                        <div class="hidden_item-wrapper">
+                          <span class="hidden_item-name">Россельхозбанк</span>
+                        </div>
+                      </div>
+                      <div class="hidden_item-row">
+                        <img
+                          src="./img/Росбанк.png"
+                          alt=""
+                          class="hidden_img-item"
+                        />
+                        <div class="hidden_item-wrapper">
+                          <span class="hidden_item-name">Росбанк</span>
+                        </div>
+                      </div>
+                      <div class="hidden_item-row">
+                        <img
+                          src="./img/Открытие.png"
+                          alt=""
+                          class="hidden_img-item"
+                        />
+                        <div class="hidden_item-wrapper">
+                          <span class="hidden_item-name">Открытие</span>
+                        </div>
+                      </div>
+                      <div class="hidden_item-row">
+                        <img
+                          src="./img/Промсвязьбанк.png"
+                          alt=""
+                          class="hidden_img-item"
+                        />
+                        <div class="hidden_item-wrapper">
+                          <span class="hidden_item-name">Промсвязьбанк</span>
+                        </div>
+                      </div>
+                      <div class="hidden_item-row">
+                        <img
+                          src="./img/Русский Стандарт.png"
+                          alt=""
+                          class="hidden_img-item"
+                        />
+                        <div class="hidden_item-wrapper">
+                          <span class="hidden_item-name">Русский Стандарт</span>
+                        </div>
+                      </div>
+                      <div class="hidden_item-row">
+                        <img
+                          src="./img/Газпромбанк.png"
+                          alt=""
+                          class="hidden_img-item"
+                        />
+                        <div class="hidden_item-wrapper">
+                          <span class="hidden_item-name">Газпромбанк</span>
+                        </div>
+                      </div>
+                      <div class="hidden_item-row">
+                        <img
+                          src="./img/Авангард.png"
+                          alt=""
+                          class="hidden_img-item"
+                        />
+                        <div class="hidden_item-wrapper">
+                          <span class="hidden_item-name">Авангард</span>
+                        </div>
+                      </div>
+                      <div class="hidden_item-row">
+                        <img
+                          src="./img/Райфайзен RUB.png"
+                          alt=""
+                          class="hidden_img-item"
+                        />
+                        <div class="hidden_item-wrapper">
+                          <span class="hidden_item-name">Райфайзен RUB</span>
+                        </div>
+                      </div>
+                      <div class="hidden_item-row">
+                        <img
+                          src="./img/РНКБ.png"
+                          alt=""
+                          class="hidden_img-item"
+                        />
+                        <div class="hidden_item-wrapper">
+                          <span class="hidden_item-name">РНКБ</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="hidden_list-item"></div>
+                    <div class="hidden_list-item"></div>
+                    <div class="hidden_list-item"></div>
+                  </div>
+                </div>
               </div>
             </div>
             <div class="cash_fields_item">
