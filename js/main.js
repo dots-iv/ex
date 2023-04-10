@@ -64,15 +64,27 @@ $('.hidden_list-item').click(function() {
   });
   
 
-  $('.cash_valet').click(function() {
-    $('.hidden').addClass('active');
+
+  $('.cash_valet').click(function(event) {
+    $('.hidden-bot').removeClass('active'); // закрываем второе меню
+    $('.hidden').toggleClass("active"); // открываем первое меню
+    $('.hidden_list-item.active').removeClass('active'); // удаляем класс active у текущего элемента
+    $('.hidden_list-item:first').addClass('active'); // добавляем класс active к первому элементу по умолчанию
+    event.stopPropagation();
   });
-
-
-
-
-
-
   
+  $('.hidden_list-item').click(function() {
+    $('.hidden_list-item.active').removeClass('active'); // удаляем класс active у текущего элемента
+    $(this).addClass('active'); // добавляем класс active к выбранному элементу
+  });
+    
+    $('.cash_valet_bot').click(function(event) {
+      $('.hidden').removeClass('active'); // закрываем первое меню
+      $('.hidden-bot').toggleClass("active"); // открываем второе меню
+      event.stopPropagation();
+    });
+
+
+
 });
 

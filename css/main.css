@@ -1392,7 +1392,29 @@ h4 {
   padding: 30px;
   background: url(/img/bg_enter.png);
 }
-
+.select_wrapper.active .hidden {
+  display: block;
+}
+.select_wrapper.active .hidden-bot {
+  display: block;
+}
+.cash_valet_bot {
+  background: #f2f4f5;
+  height: 52px;
+  position: absolute;
+  top: 2px;
+  right: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 10px 0 14px;
+  cursor: pointer;
+  border: none;
+}
+.cash_valet-img_bot {
+}
+.cash__valet-arrow_bot {
+}
 .hidden {
   position: absolute;
   background: #fff;
@@ -1580,6 +1602,13 @@ h4 {
     z-index: 99;
     padding: 17px 0;
     height: 70px;
+  }
+  .cash_fields-with_toogle {
+    display: block;
+  }
+  .cash_header-option span {
+    margin: 0;
+    display: block;
   }
   .complete_img {
     display: none;
