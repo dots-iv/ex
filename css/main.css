@@ -1477,6 +1477,44 @@ h4 {
   flex-shrink: 0;
   margin-right: 12px;
 }
+.exchange__valet-img-bot {
+  max-width: 100%;
+  width: 38px;
+  height: 38px;
+}
+.exchange__valet-arrow-bot {
+  margin-left: 6px;
+  width: 12px;
+  height: 12px;
+}
+.hidden-bot {
+  position: absolute;
+  background: #fff;
+  z-index: 1;
+  border: 2px solid #cbd0d5;
+  border-top: 0;
+  box-sizing: border-box;
+  border-bottom-left-radius: 2px;
+  border-bottom-right-radius: 2px;
+  width: 100%;
+  display: none;
+}
+.exchange_img-bot {
+  background: #f2f4f5;
+  height: 52px;
+  position: absolute;
+  top: 2px;
+  right: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 10px 0 14px;
+  cursor: pointer;
+  border: none;
+}
+.hidden-bot.active {
+  display: block;
+}
 .hidden_item-wrapper {
   display: flex;
   align-items: center;

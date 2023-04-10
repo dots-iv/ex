@@ -31,19 +31,30 @@ $(document).ready(function(){
     
   })
   $('.exchange_img, .exchange_img img').click(function(event) {
-    $(this).siblings('.hidden').toggleClass("active");
+    $('.hidden-bot').removeClass('active'); // закрываем второе меню
+    $('.hidden').toggleClass("active"); // открываем первое меню
+    $('.hidden_list-item.active').removeClass('active'); // удаляем класс active у текущего элемента
+    $('.hidden_list-item:first').addClass('active'); // добавляем класс active к первому элементу по умолчанию
     event.stopPropagation();
   });
   
-  $('.hidden').click(function(event) {
+  $('.hidden_list-item').click(function() {
+    $('.hidden_list-item.active').removeClass('active'); // удаляем класс active у текущего элемента
+    $(this).addClass('active'); // добавляем класс active к выбранному элементу
+  });
+  
+  $('.exchange_img-bot, .exchange_img-bot img').click(function(event) {
+    $('.hidden').removeClass('active'); // закрываем первое меню
+    $('.hidden-bot').toggleClass("active"); // открываем второе меню
     event.stopPropagation();
   });
   
   $(document).click(function(event) {
-    if (!$(event.target).closest('.exchange_img').length && !$(event.target).closest('.hidden').length) {
+    var target = event.target;
+    if (!$(target).closest('.hidden').length && !$(target).is('.exchange_img') && !$(target).closest('.hidden-bot').length && !$(target).is('.exchange_img-bot')) {
       $('.hidden').removeClass('active');
+      $('.hidden-bot').removeClass('active');
     }
   });
-  
 });
 
