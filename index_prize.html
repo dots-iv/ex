@@ -11,21 +11,18 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./css/main.css" />
-    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="/css/main.css" />
+    <link rel="stylesheet" href="/css/reset.css" />
     <link
       rel="stylesheet"
       type="text/css"
       href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
     />
-    <script
-      type="text/javascript"
-      src="https://code.jquery.com/jquery-3.6.0.min.js"
-    ></script>
-    <script
-      type="text/javascript"
-      src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
-    ></script>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"
+    />
   </head>
   <body class="body">
     <div class="overlay"></div>
@@ -64,7 +61,6 @@
             <a href="page2.html" class="header_nav-link"> Обмен за наличные </a>
             <a href="pageDEX.html" class="header_nav-link"> DEX </a>
             <a href="index_3.html" class="header_nav-link"> Отзывы </a>
-            <a href="index.html" class="header_nav-link"> Все напрвления </a>
             <a href="" class="header_nav-link">
               <img class="messeage_image" src="./img/messeage_img.png" alt="" />
               Поддержка
@@ -83,46 +79,75 @@
       <a href="pageDEX.html" class="ex_select-link">DEX</a>
       <a href="page2.html" class="ex_select-link">За наличные</a>
     </div>
-    <section class="main">
-      <div class="inner">
-        <div class="vhod_block">
-          <div class="container">
-            <div class="vhod_box">
-              <div class="vhod_form">
-                <div class="vhod_header">
-                  <h4 class="vhod_header-tittle">Вход</h4>
-                  <a href="" class="vhod_header-link">Регистрация</a>
-                </div>
-                <div class="vhod_form-list">
-                  <div class="vhod_form-item">
-                    <div class="vhod_form-wrap">
-                      <p>E-mail</p>
-                    </div>
-                    <input type="text" class="vhod_form-field" />
+    <main class="main">
+      <section class="inner">
+        <div class="container">
+          <h1 class="inner_tittle">Участвуй в розыгрыше!</h1>
+          <div class="question_box">
+            <div class="complete">
+              <div class="complete_text">
+                <div class="complete_draw">
+                  <div class="complete_draw-text">
+                    Каждую пятницу сервис ExHub проводит розыгрыш денежных
+                    призов. По итогам будет выбрано три победителя, которые
+                    получат по 5 000 рублей на любую карту банка РФ.
                   </div>
-                  <div class="vhod_form-item">
-                    <div class="vhod_form-wrap">
-                      <p>Пароль</p>
-                      <a href="" class="vhod_header-link">Забыли пароль?</a>
-                    </div>
-                    <input type="text" class="vhod_form-field" />
+                  <div class="complete_draw-text">Условия розыгрыша:</div>
+                  <ol class="complete_draw-list">
+                    <li class="draw_list-item">
+                      Для участия необходимо сделать обмен на нашем сервисе
+                      <a href="index.html">Exhub.io</a> и оставить отзыв о нас
+                      на
+                      <a href="https://www.bestchange.net/exhub-exchanger.html"
+                        >BestChange</a
+                      >. При написании отзыва обязательно указывайте
+                      <strong>номер обмена</strong>, без него отзыв не
+                      учитывается при розыгрыше.
+                    </li>
+                    <li class="draw_list-item">
+                      1 обмен + 1 отзыв = 1 билет.
+                      <strong>Больше билетов — больше шансов на победу!</strong>
+                    </li>
+                    <li class="draw_list-item">
+                      В недельном розыгрыше участвуют все билеты (обмен+отзыв),
+                      которые приобретены с пятницы 00:00 по четверг 24:00
+                    </li>
+                  </ol>
+                  <div class="complete_draw-text">
+                    Итоги розыгрыша подводят
+                    <a href="" class="social">
+                      <img
+                        src="./img/tg_inner-logo.png"
+                        alt=""
+                        class="social_logo-complete"
+                      />
+                      в нашем телеграм-канале
+                    </a>
                   </div>
                 </div>
-                <button class="vhod_form-action">Войти</button>
+                <div class="complete_draw-footer">
+                  <div class="complete_footer-wrap">
+                    <div class="complete_footer-tittle">Проверить билет</div>
+                    <div class="complete_footer-field">
+                      <input
+                        type="text"
+                        class="complete_draw-input"
+                        placeholder="Номер билета"
+                      />
+                    </div>
+                    <button class="complete_footer-action">Проверить</button>
+                  </div>
+                </div>
               </div>
-              <div class="vhod_info">
-                <div class="vhod_info-tittle">
-                  <img src="./img/logo.png" alt="" />
-                </div>
-                <div class="vhod_ingo-text">
-                  быстрый автоматический обмен и поддержка 24/7
-                </div>
+              <div class="complete_img">
+                <img src="./img/prize-img.svg" alt="" />
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </main>
+
     <footer class="footer">
       <div class="container">
         <div class="footer_box">
