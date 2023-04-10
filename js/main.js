@@ -56,18 +56,11 @@ $('.hidden_list-item').click(function() {
       $('.hidden-bot').removeClass('active');
     }
   });
-  $('.hidden_choose-link').on('click', function() {
-    var filter = $(this).data('filter');
-    
-    $('.hidden_list-item').each(function() {
-      var categories = $(this).data('category');
-      
-      if (categories.indexOf(filter) > -1 || filter === 'all') {
-        $(this).show();
-      } else {
-        $(this).hide();
-      }
-    });
+  $('.hidden_header-close').on('click', function() {
+    $('.hidden').removeClass('active');
+  });
+  $('.hidden_header-close').on('click', function() {
+    $('.hidden-bot').removeClass('active');
   });
 });
 
